@@ -1,86 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 	<head>
 		<meta charset="utf-8">
 		<title>Puerto Rico Traveling!</title>
+		<link rel="stylesheet" href="./css/one_page_website.css">
 	</head>
+
 	<body>
 	
 		<!-- NAV -->
-		<div>
-			<div>
-					<p><a href="#Home Section">Go to Home</a></p>
-					<p><a href="#Gallery Section">Go to Gallery</a></p>
-					<p><a href="#Contact Section">Go to Contact Form</a></p>
+		<div class="wrap">
+			<div class="menu-container">
+				<ul class="menu">
+					<p><a href="#home">Go to Home</a></p>
+					<p><a href="#gallery">Go to Gallery</a></p>
+					<p><a href="#contact">Go to Contact Form</a></p>
+				</ul>
 			</div>
 		</div>
 		<!-- END NAV -->
 		
 		<!-- HOME -->
-			<div>
-				<div>
-					<h1 id="Home">Home</h1>
-						<p>Plan your next best vacation for Summer or Winter to the beautiful island of Puerto Rico!</p>
-						<p>Whether you would like to relax on the beach, go on adventures, or do some shopping and eating, there is something to do for everybody!</p>
-						<p>Let us help you book the best plans for you or your family! Just submit a contact form to get started!</p>
+			<div id="home">
+				<div class="container">
+					<div class="text-center">
+						<span class="head-main">Puerto Rico Traveling</span>
+					</div>
 				</div>
 			</div>
 		<!-- END HOME -->
 		
 		<!-- GALLERY -->
-		<section>
-				<h1 id="Gallery Section">Gallery</h1>
-						<p>You too could enjoy these beautiful views!</p>
-				<div>
-					
+		<section id="gallery">
+			<div class="container">
+				<h1>Gallery</h1>
+				<div class="flex-container">
+
 					<!-- PHOTO CONTAINER 1 -->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/old_san_juan.jpg" alt="A view of the streets in Old San Juan." width="300" height="300">
 						</div>
 					</div>
 					<!-- END PHOTO CONTAINER 1 -->
 					
 					<!-- PHOTO CONTAINER 2 -->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<img src="./images/puerto_rico.jpg" alt="One of the many beautiful beaches." width="300" height="300">
 						</div>
 					</div>
 					<!-- END PHOTO CONTAINER 2 -->
 					
 					<!-- PHOTO CONTAINER 3 -->
-					<div>
-						<div>
+					<div class="photo-container">
+						<div class="photo">
 							<h3><p>View some of the amazing things you can do on the island!</p></h3>
 							<iframe width="560" height="315" src="https://www.youtube.com/embed/g42GbN9m4zU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 						</div>
 					</div>
 					<!-- END PHOTO CONTAINER 3 -->
+
 				</div>
+			</div>
 		</section>
 		<!-- END GALLERY -->
 		
 		<!-- CONTACT -->
-		<section>
-				<div>
-				<h1 id="Contact Section">Contact Form</h1>
-					<div>
-						<h3><p>Enjoy your vacation plans without worry!</p>
-							<p>Book your appointment today!</p>
-						</h3>
-						<p>
+		<section id="contact">
+			<div class="container">
+				<div class="heading-padding">
+					<h1 class="heading-padding">Contact</h1>
+					<div class="contact">
+						<h2>
+							<span>Plan your next vacation with us worry free!</span>
+							<br/>Book your appointment today!
+						</h2>
+						<p class="appointments-text">
 							Please provide us with your basic contact information.
 						</p>
-						<div>
+						<div class="form-contact">
 							<form action="" method="post">
 								<input class="contact" type="text" value="First Name">
 								<input class="contact" type="text" value="Last Name">
 								<input class="contact" type="text" value="Email Address">
 								<input class="contact" type="text" value="Phone Number">
 								<div class="form-spacer">
-									<label class="terms">Terms and Conditions</label>
-								</div>
+
 								<div>
 									<input type="submit" value="Submit">
 								</div>
@@ -88,11 +95,12 @@
 						</div>
 					</div>
 				</div>
+			</div>
 		</section>
 		<!-- END CONTACT -->
 		
 		<!-- FOOTER -->
-		<div>
+		<div id="footer">
 			www.puertorico.travel &nbsp;|&nbsp; &copy; 2023
 		</div>
 		<!-- END FOOTER -->
