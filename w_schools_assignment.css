@@ -1,0 +1,159 @@
+
+
+/*-------NAV BAR------*/
+
+.navbar {
+    overflow: hidden;
+    background-color: #191970;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: #DDA0DD;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: #191970;
+}
+
+.main {
+    padding: 16px;
+    margin-top: 30px;
+    height: 1500px;
+}
+
+/*-------LARGE FIRST IMAGE------*/
+.container {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    filter: contrast(90%);
+    border-radius: 25px;
+}
+ .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #DDA0DD;
+ }
+
+ .container:hover .overlay {
+    opacity: 1;
+ }
+
+ .text {
+    color: white;
+    font-size: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+ }
+
+/*-------FOOTER--------*/
+div.footer {
+    text-align: center;
+}
+
+
+
+p.thick {
+    font-weight: bold;
+}
+
+
+
+/*------TABLE-----*/
+table {
+    width: 100%;
+}
+
+table, td, th {
+    border: 1px solid #483D8B;
+    text-align: left;
+    padding: 10px;
+}
+
+th {
+    background-color: #6495ED;
+}
+
+td {
+    background-color: #F0FFF0;
+}
+
+/*-------Monkey Video------*/
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+/*-------Columns------*/
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column p:hover {
+    color: #000080;
+    background-color: tomato;
+}
+
+
+/*--------TEXT OVER PHOTO-------*/
+.container {
+    position: relative;
+    text-align: cetner;
+    color: white;
+}
+.centered {
+    font-weight: bold;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
