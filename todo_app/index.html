@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/todo.css">
+        <title>KitKats</title>
+    </head>
+
+    <body>
+
+        <input id="task"><button id="add">Add Item</button>
+        <hr>
+        <div id="todos"></div>
+
+        <script src="js/todo.js"></script>
+
+    <h1>This is using the JSON parse() method</h1>
+
+        <p id="name"></p>
+    
+    <script>
+        var obj = JSON.parse('{"firstName":"Camille", "lastName":"Mahamed"}');
+        document.getElementById("name").innerHTML = obj.firstName;
+    </script>
+
+    <h2>This is to create a string using the JSON string method.</h2>
+        <p id="demo"></p>
+        
+    <script>
+        var obj = { "name":"Camille", "age":27, "city":"In Georgia"};
+        var myJSON = JSON.stringify(obj);
+        document.getElementById("demo").innerHTML = myJSON;
+    </script>
+
+    <h2>The localStorage Property</h2>
+
+        <p>Saved name is:</p>
+        <p id="last"></p>
+
+    <script>
+        // Set Item
+        localStorage.setItem("lastname", "Mahamed");
+        // Retrieve
+        document.getElementById("last").innerHTML = localStorage.getItem("lastname");
+    </script>    
+
+    <div class="footer">
+        <p>Camille Mahamed</p>
+    </div>
+
+    </body>
+</html>

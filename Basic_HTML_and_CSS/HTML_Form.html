@@ -1,7 +1,27 @@
-<form action="" method="get">
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function validateForm() {
+				let x = document.forms["myForm"]
+			["First_Name"].value;
+				if (x == "") {
+					alert("Information must be filled out");
+					return false;
+				}
+			}
+		</script>
+	</head>
+<body>
+
+<form name="myForm" action="/action_page.php" onsubmit="return_validateForm()" method="post">
 	First name: <input type="text" name="First_Name"><br>
 	Last name: <input type="text" name="Last_Name"><br>
+	Phone number: <input type="phone number" name="Phone_Number"><br>
 	Email: <input type="email" name="Email"><br>
 	Password: <input type="password" name="Password"><br>
 	<input type="submit" value="Submit">
 </form>
+
+</body>
+</html>
